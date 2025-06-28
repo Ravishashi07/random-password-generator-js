@@ -31,7 +31,6 @@ body{
   color: #374151;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 
@@ -51,7 +50,7 @@ body{
 .wrapper{
     margin:1.25rem 1.75rem
 }
-.wrapper .input-box{
+.input-box{
     position:relative;
 }
 .input-box input{
@@ -75,10 +74,10 @@ body{
 .input-box span:hover{
     color: #2563eb!important;
 }
-.wrapper .pass-length{
+.pass-length{
     margin:1.56rem 0 1.25rem;
 }
-.pass-length .details{
+.details{
     display: flex;
     justify-content: space-between;
 }
@@ -87,27 +86,27 @@ body{
     height:5px;
     accent-color: #2563eb;
 }
-.pass-settings .options{
+.options{
     display: flex;
     list-style:none;
     flex-wrap: wrap;
     margin-top: 1rem;
 }
-.pass-settings .options .option{
+.option{
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
     width:calc(100%/2);
 }
-.options .option input[type="checkbox"] {
+input[type="checkbox"] {
     accent-color: #2563eb;
 }
-.options .option label{
+.option label{
     cursor:pointer;
     color: #475569;
     padding-left: 0.65rem;
 }
-.wrapper .generate-btn{
+.generate-btn{
     width:100%;
     color:#fff;
     border:none;
@@ -121,10 +120,10 @@ body{
     margin:0.94rem 0 1.3rem;
     transition:all 0.15s ease;
 }
-.wrapper .generate-btn:hover{
+.generate-btn:hover{
     background: #1d4ed8;
 }
-.wrapper .generate-btn:active{
+.generate-btn:active{
     background: #1e40af;
     transform: translateY(1px);
 }
