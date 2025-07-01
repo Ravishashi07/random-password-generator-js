@@ -1,24 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Poppins' , sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jersey 20", "Arbutus", "Press Start 2P", "VT323", "Doto",
+    "Poppins", sans-serif;
 }
 
-body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f8fafc;
-    color: #1e293b;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  color: #1e293b;
 }
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 #themeToggle {
   position: absolute;
@@ -33,101 +32,99 @@ body{
   cursor: pointer;
 }
 
-
-.container{
-    width:450px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+.container {
+  width: 450px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
-.container h2{
-    font-weight:600;
-    font-size:1.3rem;
-    padding:1rem 1.75rem;
-    border-bottom: 1px solid #e2e8f0;
-    color: #0f172a;
+.container h2 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 1rem 1.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #0f172a;
 }
-.wrapper{
-    margin:1.25rem 1.75rem
+.wrapper {
+  margin: 1.25rem 1.75rem;
 }
-.input-box{
-    position:relative;
+.input-box {
+  position: relative;
 }
-.input-box input{
-    width:100%;
-    height:54px;
-    color: #1e293b;
-    background: #ffffff;
-    font-size:1.06rem;
-    font-weight:500;
-    border-radius: 4px;
-    border: 1px solid #cbd5e1;
-    padding:0 2.85rem 0 1rem;
+.input-box input {
+  width: 100%;
+  height: 54px;
+  color: #1e293b;
+  background: #ffffff;
+  font-size: 1.06rem;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  padding: 0 2.85rem 0 1rem;
 }
-.input-box span{
-    position:absolute;
-    right:13px;
-    cursor:pointer;
-    line-height:54px;
-    color: #64748b;
+.input-box span {
+  position: absolute;
+  right: 13px;
+  cursor: pointer;
+  line-height: 54px;
+  color: #64748b;
 }
-.input-box span:hover{
-    color: #2563eb!important;
+.input-box span:hover {
+  color: #2563eb !important;
 }
-.pass-length{
-    margin:1.56rem 0 1.25rem;
+.pass-length {
+  margin: 1.56rem 0 1.25rem;
 }
-.details{
-    display: flex;
-    justify-content: space-between;
+.details {
+  display: flex;
+  justify-content: space-between;
 }
-.pass-length input{
-    width:100%;
-    height:5px;
-    accent-color: #2563eb;
+.pass-length input {
+  width: 100%;
+  height: 5px;
+  accent-color: #2563eb;
 }
-.options{
-    display: flex;
-    list-style:none;
-    flex-wrap: wrap;
-    margin-top: 1rem;
+.options {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
-.option{
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    width:calc(100%/2);
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: calc(100% / 2);
 }
 input[type="checkbox"] {
-    accent-color: #2563eb;
+  accent-color: #2563eb;
 }
-.option label{
-    cursor:pointer;
-    color: #475569;
-    padding-left: 0.65rem;
+.option label {
+  cursor: pointer;
+  color: #475569;
+  padding-left: 0.65rem;
 }
-.generate-btn{
-    width:100%;
-    color:#fff;
-    border:none;
-    outline:none;
-    cursor:pointer;
-    background: #2563eb;
-    font-size:1.06rem;
-    padding:0.90rem 0;
-    border-radius: 5px;
-    text-transform: uppercase;
-    margin:0.94rem 0 1.3rem;
-    transition:all 0.15s ease;
+.generate-btn {
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #2563eb;
+  font-size: 1.06rem;
+  padding: 0.9rem 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 0.94rem 0 1.3rem;
+  transition: all 0.15s ease;
 }
-.generate-btn:hover{
-    background: #1d4ed8;
+.generate-btn:hover {
+  background: #1d4ed8;
 }
-.generate-btn:active{
-    background: #1e40af;
-    transform: translateY(1px);
+.generate-btn:active {
+  background: #1e40af;
+  transform: translateY(1px);
 }
-
 
 .toast {
   position: fixed;
@@ -142,13 +139,12 @@ input[type="checkbox"] {
   z-index: 9999;
   opacity: 0;
   pointer-events: none;
-  transition:0.5s all ease !important;
+  transition: 0.5s all ease !important;
 }
 .toast.show {
   opacity: 1;
   pointer-events: auto;
 }
-
 
 /*DArk mode*/
 
